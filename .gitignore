@@ -60,3 +60,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Pong/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+Pong/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+Pong/Library/ScriptAssemblies/UnityEngine.UI.dll
