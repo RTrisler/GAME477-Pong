@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ball : MonoBehaviour
 {
+    public ScoreManager scoreManager;
+
     public Vector2 dir;
     public float speed = 3f;
     // Start is called before the first frame update
@@ -49,11 +51,11 @@ public class ball : MonoBehaviour
         }
         // if the ball hits a boundary collision it will alert who won the round and reset the ball in the middle of the arena
         else if(c.gameObject.CompareTag("rightCollisions")){
-            print("Left Wins");
+            scoreManager.Player1Goal();
             Start();
         }
         else if(c.gameObject.CompareTag("leftCollisions")){
-            print("Right Wins");
+            scoreManager.Player2Goal();
             Start();
         }
         
